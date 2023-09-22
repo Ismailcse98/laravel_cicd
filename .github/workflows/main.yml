@@ -1,0 +1,19 @@
+name: Deploy Laravel Project
+on:
+  push:
+    branches:
+      - master
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the latest code
+        uses: actions/checkout@v2.3.2
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.our-message.com
+          username: cicdlaravel@our-message.com
+          password: mzTBT&hz(]up
+          server-dir: /
