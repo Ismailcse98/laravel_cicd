@@ -16,4 +16,4 @@ jobs:
           server: ftp.our-message.com
           username: cicdlaravel@our-message.com
           password: mzTBT&hz(]up
-          server-dir: /public_html/laravel/
+          server-dir: /
